@@ -3,10 +3,9 @@ from collections import Counter
 
 def cosine_similarity(sent1, sent2): # 
     """ 
-    Calculates cosine between 2 sentences/documents. 
-    Thanks to @vpekar, see http://goo.gl/ykibJY
+    Calculates cosine between two words, sentences or documents
     """
-    WORD = re.compile(r'\w+')
+    words = re.compile(r'\w+')
     def get_cosine(vec1, vec2): # los vectores son diccionarios de frecuencia
         intersection = set(vec1.keys()) & set(vec2.keys())
         numerator = sum([vec1[x] * vec2[x] for x in intersection])
@@ -21,8 +20,8 @@ def cosine_similarity(sent1, sent2): #
             return float(numerator) / denominator
 
     def text_to_vector(text):
-        words = WORD.findall(text)
-        return Counter(words)
+        palabras = words.findall(text)
+        return Counter(palabras)
     
     vector1 = text_to_vector(sent1)
     vector2 = text_to_vector(sent2)
