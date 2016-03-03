@@ -5,7 +5,7 @@ from matplotlib import pyplot
 import pylab
 
 
-def heaps_law (texto, scale = False, k = 10, b = 0.5):
+def heaps_law (texto, scale = False, k = 30, b = 0.5):
 
 	'''
 	Calcular la ley de Heaps. Formula --> V = k* (n**b)
