@@ -1,0 +1,33 @@
+
+
+import os
+
+def create_dir (path):
+
+	if not os.path.exists(path): # Si solo indica el nombre, creará el archivo en el os.getcwd()
+
+		print("Creating the directory {}".format(name))
+
+		os.makedirs(path)
+
+
+def read_file (file):
+	f = open(filename, 'r', encoding = "utf-8")
+	f = f.read()
+	f.close
+	return f
+
+def read_dir (path, extension): # path from directory, and file extension eg ('.png', '.jpg', '.jpeg')
+	
+	output = []
+
+	list_dir = os.listdir(path)
+
+	if extension:
+		list_dir = [f for f in list_dir if f.lower().endswith(extension)]
+
+	for filename in list_dir:
+		f = read_file(filename)
+		output.append(f)
+
+	return output
