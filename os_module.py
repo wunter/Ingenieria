@@ -2,6 +2,7 @@
 
 import os
 
+# Función para crear una carpeta
 def create_dir (path):
 
 	if not os.path.exists(path): # Si solo indica el nombre, creará el archivo en el os.getcwd()
@@ -10,14 +11,15 @@ def create_dir (path):
 
 		os.makedirs(path)
 
-
+# Función para leer un archivo
 def read_file (file):
 	f = open(filename, 'r', encoding = "utf-8")
 	f = f.read()
 	f.close
 	return f
 
-def read_dir (path, extension): # path from directory, and file extension eg ('.png', '.jpg', '.jpeg')
+# Función para leer todos los archivos de una carpeta con una extensión determinada
+def read_dir (path, extension = False): # path from directory, and file extension eg ('.png', '.jpg', '.jpeg')
 	
 	output = []
 
