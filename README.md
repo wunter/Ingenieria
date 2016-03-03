@@ -14,5 +14,7 @@ Ejercicios propuestos de ingeniería
 
 > Ley de Zipf. ¿Depende de la longitud del texto? Plottear textos en distintas lenguas
 
+> Ley de Heaps. Plotear y comparar con distribución ideal
+
 
 -- Dia 2
