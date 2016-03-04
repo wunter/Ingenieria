@@ -31,7 +31,7 @@ def zipf_law (texto, scale = False):
 	
 	frecuencia.sort(reverse = True)
 	
-	datos_zipf = [(rank, frec) for rank,frec in enumerate(frecuencia)]
+	datos_zipf = [(rank, frec) for rank,frec in enumerate(frecuencia, start = 1)]
 	
 	
 	# Distribución de Zipf ideal
