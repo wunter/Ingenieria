@@ -18,3 +18,11 @@ Ejercicios propuestos de ingeniería
 
 
 -- Dia 2
+
+> Colocaciones. Metodos Estadísticos
+
+> Test t Student
+
+> Test Chi-cuadrado
+
+> Información Mutua Puntual
