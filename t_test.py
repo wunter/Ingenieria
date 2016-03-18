@@ -27,7 +27,7 @@ def student (lista, n):
   P (w2) = frecuencia w2 / total palabras
   P (w1,w2) = P(w1)*P(w2) == En la formula de t-test = u
   t = x-u / squareroot (S² / N)
-'''
+  '''
   t = {}
   
   tokens = lista 
